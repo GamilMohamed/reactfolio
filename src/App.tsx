@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import mgamil from "./assets/mgamil.jpg";
 import pswap from "./assets/pushswap.gif";
@@ -7,8 +7,10 @@ import Cub3d from "./assets/cub3d.mp4";
 import "./styles.scss"
 import "https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
 import initScrollReveal from "./scripts/scrollReveal";
+import ScrollReveal from "scrollreveal";
 
 function App() {
+  ScrollReveal().reveal('.headline') 
   return (
     <>
       <div className="App">
